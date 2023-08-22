@@ -29,5 +29,9 @@ Para testear el proyecto, basta con ejecutar las celdas de este notebook, se abr
 - En la parte superior se muestran los últimos 5 gestos detectados.
 - Se muestra también las "landmarks" detectadas sobre el cuerpo con MediaPipe
 
+<video width="320" height="240" controls>
+  <source src="record_000001.mov" type="video/mp4">
+</video>
+
 ![](record_000001.mov)
 
