@@ -25,7 +25,7 @@ Basta realizar la recolección de datos con videos de las acciones que se quiere
 
 Para testear el proyecto, basta con ejecutar las celdas de este notebook, se abrirá la camara del ordenador y una ventana donde se muestra en tiempo real las predicciones del modelo.
 
-- Por cada acción/gesto (Counting, Waving y Bye) muestra una barra horizontal correpondiente a probabilidad de gesto (se actualiza frame a frame).
+- Por cada acción/gesto (Counting, Waving y Bye) muestra una barra horizontal correpondiente a la probabilidad de gesto (se actualiza frame a frame).
 - En la parte superior se muestran los últimos 5 gestos detectados.
 - Se muestra también las "landmarks" detectadas sobre el cuerpo con MediaPipe
 
