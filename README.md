@@ -30,14 +30,12 @@ Para testear el proyecto, basta con ejecutar las celdas de este notebook, se abr
 - Se muestra también las "landmarks" detectadas sobre el cuerpo con MediaPipe
 
 
-
+### Video de muestra
 
 https://github.com/rhoffmannv/deteccion-gestos/assets/44439632/d0b63236-f19d-4f33-880e-40c7e58764fb
 
 
 
-
-https://github.com/rhoffmannv/deteccion-gestos/assets/44439632/a537b449-5f2d-4a6b-804d-76a5cf66c239
 
 
 
