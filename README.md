@@ -1,4 +1,4 @@
-# Deteccion de Acciones
+# Detección de Acciones
 
 Detección de gestos usando secuencias y redes LSTM en tiempo real
 
@@ -36,8 +36,33 @@ https://github.com/rhoffmannv/deteccion-gestos/assets/44439632/d0b63236-f19d-4f3
 
 
 
+# Detalles
 
+El proyecto se puede dividir a grandes rasgos en
 
+- Importación de librerías
+  - MediaPipe  
+  - OpenCV
+  - TensorFlow
+  - Scikit Learn
+  - Numpy
+  - MatPlotLib
+
+- Obtención de Dataset
+  - Obtención de "landmarks"
+  - Extracción de features
+  - Creación de Dataset
+  - División en conjuntostrain y test
+
+- Modelo
+  - Definición de modelo
+  - Entrenamiento de modelo
+   
+- Testing
+  - Inferencias sobre conjunto de test
+  - Cálculo de accuracy
+ 
+- Implementación 
 
 
 
