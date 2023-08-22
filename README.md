@@ -21,4 +21,10 @@ Los tres gestos requieren mostrar la palma de la mano y para distingir el gesto 
 Cabe destacar que el **proyecto es generalizable y se puede usar para detectar cualquier acción realizada por una persona frente a la camara**.
 Basta realizar la recolección de datos con videos de las acciones que se quieren detectar.
 
+## DeteccionAccionesImplementacion
+
+Para testear el proyecto, basta con ejecutar las celdas de este notebook, se abrirá la camara del ordenador y una ventana donde se muestra en tiempo real las predicciones del modelo.
+
+Por cada acción/gesto muestra una barra horizontal correpondiente a probabilidad de gesto (se actualiza frame a frame).
+En la parte superior se muestran los últimos 5 gestos detectados.
 
