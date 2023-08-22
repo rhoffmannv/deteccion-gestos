@@ -142,14 +142,14 @@ El proyecto se puede dividir a grandes rasgos en:
   - Una vez terminado el proceso de grabación, se cargan los arrays .npy para crear una matriz de *dataset* de dimensiones:  
   **(90, 40, n_landmarks)** 
 
-  >Donde 90 corresponde al total de secuencias/videos (es 3*30 = n_gestos * n_secuencias).  
-  >Donde 40 es el número de frames por video.
+  > Donde 90 corresponde al total de secuencias/videos (es 3*30 = n_gestos * n_secuencias).  
+  > Donde 40 es el número de frames por video.
 
   - A su vez se crea en paralelo un vector de etiquetas, en códificación *One-Hot*.
-  - El vector de *labels* es de dimensiones **(90, 3).
-  - 
-  >Donde 90 es el total de secuencias/videos.  
-  >Donde 3 es el número de etiquetas distintas.
+  - El vector de *labels* es de dimensiones *(90, 3)*.
+    
+  > Donde 90 es el total de secuencias/videos.  
+  > Donde 3 es el número de etiquetas distintas.
   
 ### División en conjuntos de *train* y *test*
   - Se divide en conjuntos de entrenamiento y de *test* usando función *train_test_split()* de Scikit Learn.
@@ -182,13 +182,13 @@ El proyecto se puede dividir a grandes rasgos en:
   #### Inferencias sobre conjunto de *test*
   - Uso de función *model.predict()* para hacer inferencias sobre conjunto de *test*.
   - La salida del modelo corresponde a 3 números, correspondientes a la probabilidad de detección de "Counting", "Waving" y "Bye" respectivamente.
-  - Se usa *np.argmax()* para determinar la etiqueta "ganadora".
+  - Se usa *numpy.argmax()* para determinar la etiqueta "ganadora".
   > La suma de las 3 probabilidades es 1 ie. 100%.
     
   #### Cálculo de *accuracy*
-  - Uso de función accuracy_score() importada desde scikit.metrics para cálculo de *accuracy*.
+  - Uso de función *accuracy_score()* importada desde *scikit.metrics* para cálculo de *accuracy*.
   - Porcentaje de *accuracy* de 100% en conjunto de *test*.
-  > El *accuracy* tan alto se explica dado la poca cantidad de instancias para el test (5% del dataset, correspondiente a 5 secuencias de video).
+  > El *accuracy* tan alto se explica dado la poca cantidad de instancias para el test (5% del *dataset*, correspondiente a 5 secuencias de video).
 
 ### Implementación
   #### Obtener frames usando camara en tiempo real
@@ -196,9 +196,9 @@ El proyecto se puede dividir a grandes rasgos en:
   #### Realizar predicción con modelo sobre secuencia
   - Se extraen vectores de *features* de cada *frame* y se guardan en array **"sequence"**.
   - Se hace inferencia con modelo usando las *features* de los últimos 40 *frames*.
-  - Se agrega etiqueta "ganadora" a array **"predictions"**
+  - Se agrega etiqueta "ganadora" a array **"predictions"**.
   #### Mostrar probabilidades de detección de cada gesto
-  - Se muestra una barra horizontal correpondiente a la probabilidad de gesto.
+  - Se muestra una barra horizontal correpondiente a la probabilidad del gesto.
   - Sobre la barra se escribe el nombre de la etiqueta.
   #### Validar nuevas detecciones de gestos
   - Se aplican filtros sobre array  **"predictions"** para válidar gestos:
@@ -208,5 +208,5 @@ El proyecto se puede dividir a grandes rasgos en:
   - Si se pasan los 3 filtros, se agrega etiqueta a array **"sentence"**.
   #### Mostrar texto con detecciones de gestos
   - Se muestra texto en parte superior de la pantalla con los últimos 5 gestos válidados en array **"sentence"**.
-  > Notar que si se realiza mismo gesto consecutivamente solo se valida una vez.
+  > Notar que si se realiza el mismo gesto consecutivamente solo se valida una vez.
   
