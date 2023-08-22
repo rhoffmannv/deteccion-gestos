@@ -83,13 +83,64 @@ El proyecto se puede dividir a grandes rasgos en:
 
 ## Obtención de Dataset
 
+### Preparación
+  #### Definir acciones/gestos
+
+  Se decide usar los siguientes 3 gestos, usando la mano derecha:
+  - Counting: Contar con los dedos de 1 a 5.
+  - Waving: Saludar moviendo la mano abierta de izquierda a derecha.
+  - Bye: Despedirse abriendo y cerrando la mano.
+
+  #### Definir cantidad de videos y de frames
+
+  Por cada acción se decide usar:
+  - 30 videos/secuencias
+  - Cada secuencia es de 40 frames
+
+  #### Creación de carpetas para datos
+
+  - Se crea una carpeta por gesto
+  - Dentro de cada carpeta "gesto" se crean 30 carpetas "video" (30 videos por gesto)
+  - Cada carpeta "video" se llenará con features (N° frames numpy arrays)
+
+
 ### Obtención de *"landmarks"*
 
-Para 
+  #### Acceder a cámara
+  Para acceder a la cámara del dispositivo se usa OpenCV con línea:  
+    cap = cv2.VideoCapture(0)  
+  Para obtener el frame actual se usa:  
+    ret, frame = cap.read()  
 
+  #### Cálculo de *landmarks*
+  Se usa librería MediaPipe para importar modelo Holistic para detectar las partes del curpo en el *frame*.  
+  El modelo entrega predicciones de cara, pose, mano derecha y mano izquierda.  
+  Para cada uno entrega una serie de *landmarks* con atributos x, y, z.  
+  Ver función mediapipe_detection() en código.  
+  
 ### Extracción de *features*
+  A partir de las *landmarks* entregadas por el modelo de MediaPipe se crea un vector de *features* para catacterizar el *frame*.  
+  Simplemente se concatenan las *landmarks* en un vector plano.  
+  Ver función extract_keypoints() en código.  
+  > Se usan todas las *landmarks* inicialmente para poder ser usado en problema general, pero para este proyecto se usan solo las *landmarks* de la mano derecha.
 
 ### Creación de Dataset
+  El proceso de recolección de datos consiste en:  
+    Por cada gesto:  
+      Por cada video a grabar:  
+        Por cada frame por secuencia:  
+          Extraer frame de OpenCV  
+          Cálcular *landmarks*  
+          Extraer vector de *feature* del *frame*  
+          Guardar en numpy array en carpeta correspondiente  
 
+  Una vez terminado el proceso de grabación, se cargan los arrays .npy par crear una matriz de Dataset se dimensiones
+  (90, 40, n_landmarks)
+
+  Donde 90 corresponde al total de secuencias/videos (es 3*30 = n_gestos * n_videos)  
+  Donde 40 es el número de frames por video
+  
 ### División en conjuntos de *train* y *test*
+  Se divide en conjuntos de entrenamiento y de *test* usando función train_test_split() de Scikit Learn.
+  Se deja el 5% del *dataset* para *testing*.
 
