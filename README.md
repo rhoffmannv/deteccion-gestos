@@ -33,5 +33,4 @@ Para testear el proyecto, basta con ejecutar las celdas de este notebook, se abr
   <source src="record_000001.mov" type="video/mp4">
 </video>
 
-![](record_000001.mov)
 
