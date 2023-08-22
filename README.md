@@ -49,8 +49,11 @@ El proyecto se puede dividir a grandes rasgos en:
 - Obtención de Dataset
   - Preparación
     - Definir acciones/gestos
-    - Definir cantidad de videos y de frames  
+    - Definir cantidad de videos y de frames
+    - Creación de carpetas para datos
   - Obtención de *"landmarks"*
+    - Acceder a cámara
+    - Usar MediaPipe sobre frames
   - Extracción de *features*
   - Creación de Dataset
   - División en conjuntos de *train* y *test*
