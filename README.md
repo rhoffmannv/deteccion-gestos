@@ -16,6 +16,9 @@ En este proyecto se utilizaron 3 gestos distintos a clasificar:
 - Bye: Despedirse abriendo y cerrando la mano
 
 La razón de usar estos gestos/acciones es que se quiere utilizar una red LSTM para discernir usando una secuencia de frames.
+Los tres gestos requieren mostrar la palma de la mano y para distingir el gesto se requiere usar la secuencia de movimientos.
 
-Los tres gestos requieren mostrar la palma de la mano y para distingir el gesto se requiere usar la secuencia de movimientos
+Cabe destacar que el **proyecto es generalizable y se puede usar para detectar cualquier acción realizada por una persona frente a la camara**.
+Basta realizar la recolección de datos con videos de las acciones que se quieren detectar.
+
 
