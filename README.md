@@ -12,9 +12,10 @@ El repositorio contiene dos Jupyter Notebooks:
 En este proyecto se utilizaron 3 gestos distintos a clasificar:
 
 - Counting: Contar con los dedos de 1 a 5
-- Waving: Saludar moviendo la mano abirta de izquierda a derecha
+- Waving: Saludar moviendo la mano abierta de izquierda a derecha
 - Bye: Despedirse abriendo y cerrando la mano
 
-La razón del uso de estos gestos/acciones es que se quiere utilizar una red LSTM para discernir usando una secuencia de frames
+La razón de usar estos gestos/acciones es que se quiere utilizar una red LSTM para discernir usando una secuencia de frames.
+
 Los tres gestos requieren mostrar la palma de la mano y para distingir el gesto se requiere usar la secuencia de movimientos
 
