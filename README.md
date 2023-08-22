@@ -28,8 +28,12 @@ Para testear el proyecto, basta con ejecutar las celdas de este notebook, se abr
 - Por cada acción/gesto (Counting, Waving y Bye) muestra una barra horizontal correpondiente a la probabilidad de gesto (se actualiza frame a frame).
 - En la parte superior se muestran los últimos 5 gestos detectados.
 - Se muestra también las "landmarks" detectadas sobre el cuerpo con MediaPipe
-- 
-<video width="630" height="300" src="https://github.com/rhoffmannv/deteccion-gestos/blob/main/record_000001.mov"></video>
+
+
+<video width="630" height="300" src="https://github.com/rhoffmannv/deteccion-gestos/assets/44439632/7a7e6eca-9214-4739-b105-e4c3c8cbad98"></video>
+
+
+
 
 
 
