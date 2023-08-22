@@ -67,9 +67,21 @@ El proyecto se puede dividir a grandes rasgos en:
 
 ## Importación de librerías
 
+  Entre las librerías utilizadas destacan:
+
   - MediaPipe: Para detectar partes del cuerpo (*"landmarks"*) en las imágenes.
   - OpenCV: Para usar la cámara del dipositivo en tiempo real.
   - TensorFlow: Para definir y entrenar el modelo con redes LSTM.
   - Scikit Learn: Para dividir conjuntos de *train* y *test* y para cálculo de *accuracy*.
   - Numpy: Para trabajar y guardar vectores de *features* y usar datos en *pipeline* de TensorFlow.
+
+## Obtención de Dataset
+
+### Obtención de *"landmarks"*
+
+### Extracción de *features*
+
+### Creación de Dataset
+
+### División en conjuntos de *train* y *test*
 
