@@ -47,6 +47,9 @@ El proyecto se puede dividir a grandes rasgos en:
   - Numpy
  
 - Obtención de Dataset
+  - Preparación
+    - Definir acciones/gestos
+    - Definir cantidad de videos y de frames  
   - Obtención de *"landmarks"*
   - Extracción de *features*
   - Creación de Dataset
@@ -78,6 +81,8 @@ El proyecto se puede dividir a grandes rasgos en:
 ## Obtención de Dataset
 
 ### Obtención de *"landmarks"*
+
+Para 
 
 ### Extracción de *features*
 
