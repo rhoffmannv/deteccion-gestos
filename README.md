@@ -36,31 +36,30 @@ https://github.com/rhoffmannv/deteccion-gestos/assets/44439632/d0b63236-f19d-4f3
 
 
 
-# Detalles
+# Detalles del proyecto
 
 El proyecto se puede dividir a grandes rasgos en
 
 - Importación de librerías
-  - MediaPipe  
-  - OpenCV
-  - TensorFlow
-  - Scikit Learn
-  - Numpy
-  - MatPlotLib
-
+  - MediaPipe: Para detectar partes del cuerpo (*"landmarks"*) en las imágenes.
+  - OpenCV: Para usar la cámara del dipositivo en tiempo real.
+  - TensorFlow: Para definir y entrenar el modelo con redes LSTM.
+  - Scikit Learn: Para dividir conjuntos de *train* y *test* y para cálculo de *accuracy*.
+  - Numpy: Para trabajar y guardar vectores de *features* y usar datos en *pipeline* de TensorFlow
+ 
 - Obtención de Dataset
-  - Obtención de "landmarks"
-  - Extracción de features
+  - Obtención de *"landmarks"*
+  - Extracción de *features*
   - Creación de Dataset
-  - División en conjuntostrain y test
+  - División en conjuntos de *train* y *test*
 
 - Modelo
   - Definición de modelo
   - Entrenamiento de modelo
    
 - Testing
-  - Inferencias sobre conjunto de test
-  - Cálculo de accuracy
+  - Inferencias sobre conjunto de *test*
+  - Cálculo de *accuracy*
  
 - Implementación 
 
