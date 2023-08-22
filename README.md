@@ -1,4 +1,10 @@
 # Deteccion de Acciones
+
+- First item
+- Second item
+- Third item
+- Fourth item
+  
 Detección de gestos usando secuencias y redes LSTM en tiempo real
 
 El repositorio contiene dos Jupyter Notebooks:
