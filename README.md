@@ -31,7 +31,9 @@ Para testear el proyecto, basta con ejecutar las celdas de este notebook, se abr
 
 
 
-<video width="630" height="300" src="https://github.com/rhoffmannv/deteccion-gestos/assets/44439632/7a7e6eca-9214-4739-b105-e4c3c8cbad98.mov"></video>
+
+https://github.com/rhoffmannv/deteccion-gestos/assets/44439632/d0b63236-f19d-4f33-880e-40c7e58764fb
+
 
 
 
