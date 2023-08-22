@@ -29,5 +29,5 @@ Para testear el proyecto, basta con ejecutar las celdas de este notebook, se abr
 - En la parte superior se muestran los últimos 5 gestos detectados.
 - Se muestra también las "landmarks" detectadas sobre el cuerpo con MediaPipe
 
-![](record_000001.asf)
+![](record_000001.mov)
 
