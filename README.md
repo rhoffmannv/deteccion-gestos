@@ -11,9 +11,9 @@ El repositorio contiene dos Jupyter Notebooks:
 
 En este proyecto se utilizaron 3 gestos distintos a clasificar:
 
-- Counting: Contar con los dedos de 1 a 5
-- Waving: Saludar moviendo la mano abierta de izquierda a derecha
-- Bye: Despedirse abriendo y cerrando la mano
+- Counting: Contar con los dedos de 1 a 5.
+- Waving: Saludar moviendo la mano abierta de izquierda a derecha.
+- Bye: Despedirse abriendo y cerrando la mano.
 
 La razón de usar estos gestos/acciones es que se quiere utilizar una red LSTM para discernir usando una secuencia de frames.
 Los tres gestos requieren mostrar la palma de la mano y para distingir el gesto se requiere usar la secuencia de movimientos.
@@ -27,7 +27,7 @@ Para testear el proyecto, basta con ejecutar las celdas de este notebook, se abr
 
 - Por cada acción/gesto (Counting, Waving y Bye) muestra una barra horizontal correpondiente a la probabilidad de gesto (se actualiza frame a frame).
 - En la parte superior se muestran los últimos 5 gestos detectados.
-- Se muestra también las "landmarks" detectadas sobre el cuerpo con MediaPipe
+- Se muestra también las "landmarks" detectadas sobre el cuerpo con MediaPipe.
 
 
 ### Video de muestra
@@ -35,17 +35,16 @@ Para testear el proyecto, basta con ejecutar las celdas de este notebook, se abr
 https://github.com/rhoffmannv/deteccion-gestos/assets/44439632/d0b63236-f19d-4f33-880e-40c7e58764fb
 
 
-
 # Detalles del proyecto
 
-El proyecto se puede dividir a grandes rasgos en
+El proyecto se puede dividir a grandes rasgos en:
 
 - Importación de librerías
-  - MediaPipe: Para detectar partes del cuerpo (*"landmarks"*) en las imágenes.
-  - OpenCV: Para usar la cámara del dipositivo en tiempo real.
-  - TensorFlow: Para definir y entrenar el modelo con redes LSTM.
-  - Scikit Learn: Para dividir conjuntos de *train* y *test* y para cálculo de *accuracy*.
-  - Numpy: Para trabajar y guardar vectores de *features* y usar datos en *pipeline* de TensorFlow
+  - MediaPipe
+  - OpenCV
+  - TensorFlow
+  - Scikit Learn
+  - Numpy
  
 - Obtención de Dataset
   - Obtención de *"landmarks"*
@@ -61,8 +60,16 @@ El proyecto se puede dividir a grandes rasgos en
   - Inferencias sobre conjunto de *test*
   - Cálculo de *accuracy*
  
-- Implementación 
+- Implementación
+  - Obtener frames usando camara en tiempo real
+  - Realizar predicción con modelo sobre secuencia
+  - Guardar predicciones y válidar nuevas detecciones de gestos
 
+## Importación de librerías
 
-
+  - MediaPipe: Para detectar partes del cuerpo (*"landmarks"*) en las imágenes.
+  - OpenCV: Para usar la cámara del dipositivo en tiempo real.
+  - TensorFlow: Para definir y entrenar el modelo con redes LSTM.
+  - Scikit Learn: Para dividir conjuntos de *train* y *test* y para cálculo de *accuracy*.
+  - Numpy: Para trabajar y guardar vectores de *features* y usar datos en *pipeline* de TensorFlow.
 
